@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.finance;
+
+import com.pluralsight.IValuable;
 
 public class BankAccount implements IValuable {
     protected String name;

@@ -1,4 +1,16 @@
 package com.pluralsight;
 
-public class FixedAsset {
+public abstract class FixedAsset implements IValuable {
+    protected String name;
+    protected double marketValue;
+
+    public FixedAsset(String name, double marketValue) {
+        this.name = name;
+        this.marketValue = marketValue;
+    }
+
+    @Override
+    public double getValue() {
+        return 0;
+    }
 }

@@ -1,6 +1,8 @@
-package com.pluralsight;
+package com.pluralsight.finance;
 
-public class CreditCard implements IValuable{
+import com.pluralsight.IValuable;
+
+public class CreditCard implements IValuable {
 
     protected String name;
     protected String accountNumber;
@@ -11,17 +13,18 @@ public class CreditCard implements IValuable{
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
-
+    //overriding the method from the interface to return the balance on the credit card
     @Override
     public double getValue() {
-        return 0;
+        return -this.balance;
     }
-
-    public double charge(){
-        return 0;
+    //creating a method and a variable to alter the balcne when the card is charged
+    public double charge(double amount){
+        return amount += balance;
     }
+    //creating a method to alter the balance when the card makes payment
+    public double pay(double amount){
+        return amount -= balance;
 
-    public double pay(){
-        return 0;
     }
 }

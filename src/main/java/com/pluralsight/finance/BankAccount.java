@@ -18,11 +18,11 @@ public class BankAccount implements IValuable {
         return this.balance;
     }
     // adding money to the account when a deposit is made and returning the new balance
-    public double deposit(double amount){
-        return amount += this.balance;
+    public void deposit(double amount){
+         this.balance += amount;
     }
     // subtracting the withdraw amount from the balnce and returning the new balance
-    public double withdraw(double amount){
-        return amount -= this.balance;
+    public void withdraw(double amount){
+        this.balance -= amount;
     }
 }

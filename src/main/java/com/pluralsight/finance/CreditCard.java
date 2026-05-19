@@ -19,12 +19,12 @@ public class CreditCard implements IValuable {
         return -this.balance;
     }
     //creating a method and a variable to alter the balcne when the card is charged
-    public double charge(double amount){
-        return amount += balance;
+    public void charge(double amount){
+        balance += amount;
     }
     //creating a method to alter the balance when the card makes payment
-    public double pay(double amount){
-        return amount -= balance;
+    public void pay(double amount){
+        balance += amount;
 
     }
 }

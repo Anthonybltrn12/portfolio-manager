@@ -20,7 +20,7 @@ public class CreditCard implements IValuable {
     }
     //creating a method and a variable to alter the balcne when the card is charged
     public void charge(double amount){
-        balance += amount;
+        balance -= amount;
     }
     //creating a method to alter the balance when the card makes payment
     public void pay(double amount){

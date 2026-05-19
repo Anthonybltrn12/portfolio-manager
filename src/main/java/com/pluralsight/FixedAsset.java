@@ -11,6 +11,6 @@ public abstract class FixedAsset implements IValuable {
 
     @Override
     public double getValue() {
-        return 0;
+        return marketValue;
     }
 }

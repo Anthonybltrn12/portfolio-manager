@@ -15,14 +15,14 @@ public class BankAccount implements IValuable {
 
     @Override
     public double getValue() {
-        return 0;
+        return this.balance;
     }
-
-    public double deposit(){
-        return 0;
+    // adding money to the account when a deposit is made and returning the new balance
+    public double deposit(double amount){
+        return amount += this.balance;
     }
-
-    public double withdraw(){
-        return 0;
+    // subtracting the withdraw amount from the balnce and returning the new balance
+    public double withdraw(double amount){
+        return amount -= this.balance;
     }
 }
